@@ -8,7 +8,3 @@ RUN apk add --no-cache \
         && \
     pip install --upgrade awscli s3cmd python-magic && \
     apk --purge del py-pip
-VOLUME /root/.aws
-VOLUME /project
-WORKDIR /project
-ENTRYPOINT ["aws"]
